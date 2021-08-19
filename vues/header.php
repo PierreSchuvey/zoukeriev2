@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html ng-app="app" ng-controller="testCtrl">
 <head>
-    <title>Le journal du Shasseur</title>
+    <title>La Zoukerie</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.css" />
