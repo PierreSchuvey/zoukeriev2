@@ -70,7 +70,7 @@ if (isset($_POST['validInscrip'])) {
             $formError['add'] = 'Erreur lors de l\'ajout';
         } else {
             $formError['add'] = 'Inscription Validée';
-            $formError['redirect'] = 'Vous allez êtres redirigé vers la page de connexion dans 3secs !';
+            $formError['redirect'] = 'Redirection vers la page de connexion !';
             $insertSuccess = true;
             ?>
             <meta http-equiv="refresh" content="3;URL=/">
