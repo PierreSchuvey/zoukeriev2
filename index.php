@@ -11,7 +11,7 @@ include_once 'controllers/loginUsers.php';
         <div class="row">
             <div class="col-12 text-center">
                 <form id="loginForm" action="" method="post">
-                    <div class="form-group col-12 topLog">
+                    <div class="form-group col-6 topLog">
                         <label for="exampleInputEmail1">Pseudo</label><br>
                         <input type="text" class="form-control" name="pseudoLog">
                     </div>
