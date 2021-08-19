@@ -43,7 +43,7 @@ if (isset($_POST['logInSubmit'])) {
                 $_SESSION['pseudo'] = $login->pseudo;
                 $_SESSION['connected'] = 1;
                 ?>
-                <meta http-equiv="refresh" content="0.1;URL=/mon_profil/<?= $_SESSION['pseudo'] ?>">
+                <meta http-equiv="refresh" content="0.1;URL=/games.php ?>">
                 <?php
             }
         } else {
