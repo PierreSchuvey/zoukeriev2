@@ -18,10 +18,10 @@ if (isset($_POST['logInSubmit'])) {
     if (isset($_POST['pseudoLog']) && !empty($_POST['pseudoLog'])) {
         $user->pseudo = htmlspecialchars($_POST['pseudoLog']);
         if (!preg_match($regPseudo, $user->pseudo)) {
-            $formError['pseudoLog'] = 'Syntax erreure';
+            $formError['pseudoLog'] = 'Erreur d\'identifiants';
         }
     } else {
-        $formError['pseudoLog'] = 'Erreur';
+        $formError['pseudoLog'] = 'Erreur d\'identifiants';
     }
 
     $login = $user->loginIn();
@@ -37,7 +37,7 @@ if (isset($_POST['logInSubmit'])) {
             $passwordLog = htmlspecialchars($_POST['passwordLog']);
             $hashed_password = password_hash($passwordLog, PASSWORD_DEFAULT);
             if (!password_verify($passwordLog, $hashed_password)) {
-                $formError['passwordLog'] = 'Mauvais Mdp';
+                $formError['passwordLog'] = 'Erreur d\'identifiants';
             } else {
                 $_SESSION['id'] = $login->id;
                 $_SESSION['pseudo'] = $login->pseudo;
@@ -47,10 +47,10 @@ if (isset($_POST['logInSubmit'])) {
                 <?php
             }
         } else {
-            $formError['pseudoLog'] = 'MDP erreur';
+            $formError['pseudoLog'] = 'Erreur d\'identifiants';
         }
     } else {
-        $formError['pseudoLog'] = 'Cheh';
+        $formError['pseudoLog'] = 'Erreur d\'identifiants';
     }
 }
 ?>
