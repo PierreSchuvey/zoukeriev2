@@ -3,6 +3,7 @@
 class dataBase {
 
     //L'attribut $db sera disponible dans ses enfants
+
     protected $db;
 
     /*
@@ -12,37 +13,12 @@ class dataBase {
 
     public function __construct() {
         try {
-            $dbstr = getenv('CLEARDB_DATABASE_URL');
-
-            $dbstr = substr("$dbstr", 8);
-            $dbstrarruser = explode(":", $dbstr);
-
-//Please don't look at these names. Yes I know that this is a little bit trash :D
-            $dbstrarrhost = explode("@", $dbstrarruser[0]);
-            $dbstrarrrecon = explode("?", $dbstrarrhost[0]);
-            $dbstrarrport = explode("/", $dbstrarrrecon[0]);
-
-            $dbpassword = $dbstrarrhost[0];
-            $dbhost = $dbstrarrport[0];
-            $dbport = $dbstrarrport[0];
-            $dbuser = $dbstrarruser[0];
-            $dbname = $dbstrarrport[0];
-
-            unset($dbstrarrrecon);
-            unset($dbstrarrport);
-            unset($dbstrarruser);
-            unset($dbstrarrhost);
-
-            unset($dbstr);
-            /*  //Uncomment this for debug reasons
-            echo $dbname . " - name<br>";
-            echo $dbhost . " - host<br>";
-            echo $dbport . " - port<br>";
-            echo $dbuser . " - user<br>";
-            echo $dbpassword . " - passwd<br>";
-            */
-            $dbanfang = 'mysql:host=' . $dbhost . ';dbname=' . $dbname;
-            $this->db = new PDO($dbanfang, $dbuser, $dbpassword);;
+            $cleardb_url      = parse_url(getenv("CLEARDB_DATABASE_URL"));
+            $cleardb_server   = $cleardb_url["host"];
+            $cleardb_username = $cleardb_url["user"];
+            $cleardb_password = $cleardb_url["pass"];
+            $cleardb_db       = substr($cleardb_url["path"],1);
+            $this->db = new PDO('mysql:host=eu-cdbr-west-01.cleardb.com;dbname=`heroku_ef333d26a4fcbf4`;charset=utf8', 'b4989a81bc327b', '09addbf9');
         } catch (Exception $e) {
             die('Erreur : ' . $e->getMessage());
         }
