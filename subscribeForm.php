@@ -33,7 +33,7 @@ include_once 'controllers/addUserController.php';
                 <p class="errorsLoginSub"><?= isset($formError['password']) ? $formError['password'] : '' ?></p>
             </div>
             <div class="form-group col-lg-offset-4 col-lg-5">
-                <label>Mot de passe (confirmation*) : </label>
+                <label>Mot de passe (confirmation)* : </label>
             </div>
             <div class="form-group col-lg-offset-4 col-lg-4">
                 <input type="password" name="confPassword" class="form-control" >
