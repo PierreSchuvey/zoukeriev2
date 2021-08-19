@@ -36,6 +36,7 @@ if (isset($_POST['logInSubmit'])) {
         if (isset($_POST['passwordLog']) && !empty($_POST['passwordLog'])) {
             $passwordLog = htmlspecialchars($_POST['passwordLog']);
             var_dump($passwordLog);
+            var_dump($login->password);
             if (!password_verify($passwordLog, $login->password)) {
                 $formError['passwordLog'] = 'Mauvais Mdp';
             } else {
