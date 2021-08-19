@@ -11,11 +11,11 @@ include_once 'controllers/loginUsers.php';
         <div class="row">
             <div class="col-12 text-center">
                 <form id="loginForm" action="" method="post">
-                    <div class="form-group offset-3 col-6 topLog">
+                    <div class="form-group offset-1 col-10 offset-sm-3 col-sm-6 topLog">
                         <label for="exampleInputEmail1">Pseudo</label><br>
                         <input type="text" class="form-control" name="pseudoLog">
                     </div>
-                    <div class="form-group offset-3 col-6">
+                    <div class="form-group offset-1 col-10 offset-sm-3 col-sm-6">
                         <label for="exampleInputEmail1">Mot de passe</label><br>
                         <input type="password" class="form-control" name="passwordLog">
                     </div>
