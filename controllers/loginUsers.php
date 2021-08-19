@@ -37,7 +37,7 @@ if (isset($_POST['logInSubmit'])) {
             $passwordLog = htmlspecialchars($_POST['passwordLog']);
             var_dump($passwordLog);
             var_dump($login->password);
-            if (!password_verify($passwordLog, $login->password)) {
+            if ($passwordLog == $login->password) {
                 $formError['passwordLog'] = 'Mauvais Mdp';
             } else {
                 $_SESSION['id'] = $login->id;
