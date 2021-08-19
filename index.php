@@ -11,15 +11,15 @@ include_once 'controllers/loginUsers.php';
         <div class="row">
             <div class="col-12 text-center">
                 <form id="loginForm" action="" method="post">
-                    <div class="form-group col-6 topLog">
+                    <div class="form-group offset-3 col-6 topLog">
                         <label for="exampleInputEmail1">Pseudo</label><br>
                         <input type="text" class="form-control" name="pseudoLog">
                     </div>
-                    <div class="form-group col-12">
+                    <div class="form-group offset-3 col-6">
                         <label for="exampleInputEmail1">Mot de passe</label><br>
                         <input type="password" class="form-control" name="passwordLog">
                     </div>
-                    <div class="form-group col-12">
+                    <div class="form-group offset-4 col-4">
                         <button type="submit" class="form-control" name="logInSubmit"> Connexion</button>
                         <p class="errorsLoginSub"><?= isset($formError['passwordLog']) ? $formError['passwordLog'] : '' ?><?= isset($formError['pseudoLog']) ? $formError['pseudoLog'] : '' ?></p>
                         <small>Vous n'êtes pas encore inscrit ? Alors cliquer : <a href = "subscribeForm.php" alt = "Inscription" id = "subscribe">Ici</a></small>
