@@ -10,12 +10,12 @@ include_once 'controllers/addUserController.php';
 ?>
   <body>
     <div class="title">
-      <img id="imgLeft" src="assets/images/zoukerieLogo.jpg" alt="Zoukerie Logo">
         <h1><?= $_SESSION['pseudo'] ?></h1>
-      <img id="imgRight" src="assets/images/zoukerieLogo.jpg" alt="Zoukerie Logo">
     </div>
     <div class="container">
-      <?= $allVersion ?>
+      <?php
+         $allVersion
+      ?>
     </div>
   </body>
   <footer>
