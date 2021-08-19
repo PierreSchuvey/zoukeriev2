@@ -35,9 +35,8 @@ if (isset($_POST['logInSubmit'])) {
     if (is_object($login)) {
         if (isset($_POST['passwordLog']) && !empty($_POST['passwordLog'])) {
             $passwordLog = htmlspecialchars($_POST['passwordLog']);
-            var_dump($passwordLog);
-            var_dump($login->password);
-            if ($passwordLog == $login->password) {
+            $hashed_password = password_hash($passwordLog, PASSWORD_DEFAULT);
+            if (!password_verify($passwordLog, $hashed_password)) {
                 $formError['passwordLog'] = 'Mauvais Mdp';
             } else {
                 $_SESSION['id'] = $login->id;

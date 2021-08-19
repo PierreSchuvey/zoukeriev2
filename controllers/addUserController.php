@@ -42,7 +42,7 @@ if (isset($_POST['validInscrip'])) {
             if ($_POST['confPassword'] == $_POST['password']) {
                 $user->password = htmlspecialchars($_POST['password']);
                 if (preg_match($regPassword, $user->password)) {
-                    $user->password = $user->password;
+                    $user->password = password_hash($user->password, PASSWORD_BCRYPT);
                 } else {
                     $formError['password'] = 'Le mot de passe n\'est pas correct';
                     $formError['confPassword'] = 'Le mot de passe n\'est pas correct';
