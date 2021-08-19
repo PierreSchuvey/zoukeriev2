@@ -73,7 +73,7 @@ if (isset($_POST['validInscrip'])) {
             $formError['redirect'] = 'Vous allez êtres redirigé vers la page de connexion dans 3secs !';
             $insertSuccess = true;
             ?>
-            <meta http-equiv="refresh" content="3;URL=login.php">
+            <meta http-equiv="refresh" content="3;URL=/">
             <?php
         }
     }
