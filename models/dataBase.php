@@ -18,15 +18,15 @@ class dataBase {
             $dbstrarruser = explode(":", $dbstr);
 
 //Please don't look at these names. Yes I know that this is a little bit trash :D
-            $dbstrarrhost = explode("@", $dbstrarruser[1]);
-            $dbstrarrrecon = explode("?", $dbstrarrhost[1]);
+            $dbstrarrhost = explode("@", $dbstrarruser[0]);
+            $dbstrarrrecon = explode("?", $dbstrarrhost[0]);
             $dbstrarrport = explode("/", $dbstrarrrecon[0]);
 
             $dbpassword = $dbstrarrhost[0];
             $dbhost = $dbstrarrport[0];
             $dbport = $dbstrarrport[0];
             $dbuser = $dbstrarruser[0];
-            $dbname = $dbstrarrport[1];
+            $dbname = $dbstrarrport[0];
 
             unset($dbstrarrrecon);
             unset($dbstrarrport);
