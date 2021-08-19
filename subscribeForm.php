@@ -12,9 +12,12 @@ include_once 'controllers/addUserController.php';
             <!--Affichage des messages d'erreurs si il y en as-->
             <p class="errorsLoginSub"><?= isset($formError['add']) ? $formError['add'] : '' ?></p>
             <p class="errorsLoginSub"><?= isset($formError['redirect']) ? $formError['redirect'] : '' ?></p>
-            <h1>Inscription</h1>
+            <div class="title">
+                <h1>Inscription</h1>
+            </div>
+
         </div>
-        <form action="" method="post" enctype="multipart/form-data">
+        <form id="subForm" action="" method="post" enctype="multipart/form-data">
             <div class="col-lg-offset-4 col-lg-4  topLog">
                 <label>Pseudo* : </label>
             </div>
