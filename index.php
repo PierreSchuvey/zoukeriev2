@@ -19,7 +19,7 @@ include_once 'controllers/loginUsers.php';
                         <label for="exampleInputEmail1">Mot de passe</label><br>
                         <input type="password" class="form-control" name="passwordLog">
                     </div>
-                    <div class="form-group offset-4 col-4">
+                    <div class="form-group offset-1 col-10 offset-sm-3 col-sm-6">
                         <button type="submit" class="form-control" name="logInSubmit"> Connexion</button>
                         <p class="errorsLoginSub"><?= isset($formError['passwordLog']) ? $formError['passwordLog'] : '' ?><?= isset($formError['pseudoLog']) ? $formError['pseudoLog'] : '' ?></p>
                         <small>Vous n'êtes pas encore inscrit ? Alors cliquer : <a href = "subscribeForm.php" alt = "Inscription" id = "subscribe">Ici</a></small>
