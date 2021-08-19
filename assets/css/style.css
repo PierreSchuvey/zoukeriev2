@@ -104,3 +104,6 @@ button:hover{
   display: block;
   text-align: center;
 }
+.form-group{
+  margin-top:30px;
+}
