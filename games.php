@@ -1,18 +1,16 @@
-<!DOCTYPE html>
-
-<html lang="fr" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Les JdR de la Zoukerie</title>
-  </head>
+<?php
+include_once 'vues/header.php';
+// Inégration du modéle dataBase pour éfféctué la connexion à la bas de données
+include_once 'models/dataBase.php';
+// intégration du modéle user
+include_once 'models/users.php';
+//Intégration du controlleur addUserController
+include_once 'controllers/addUserController.php';
+?>
   <body>
     <div class="title">
       <img id="imgLeft" src="assets/images/zoukerieLogo.jpg" alt="Zoukerie Logo">
-        <h1>la zoukerie fait des JdR</h1>
+        <h1><?= $_SESSION['pseudo'] ?></h1>
       <img id="imgRight" src="assets/images/zoukerieLogo.jpg" alt="Zoukerie Logo">
     </div>
     <div class="container">
