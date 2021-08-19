@@ -18,10 +18,10 @@ if (isset($_POST['logInSubmit'])) {
     if (isset($_POST['pseudoLog']) && !empty($_POST['pseudoLog'])) {
         $user->pseudo = htmlspecialchars($_POST['pseudoLog']);
         if (!preg_match($regPseudo, $user->pseudo)) {
-            $formError['pseudoLog'] = 'Identifiant incorrect';
+            $formError['pseudoLog'] = 'Syntax erreure';
         }
     } else {
-        $formError['pseudoLog'] = 'Identifiant incorrect';
+        $formError['pseudoLog'] = 'Erreur';
     }
 
     $login = $user->loginIn();
@@ -36,7 +36,7 @@ if (isset($_POST['logInSubmit'])) {
         if (isset($_POST['passwordLog']) && !empty($_POST['passwordLog'])) {
             $passwordLog = htmlspecialchars($_POST['passwordLog']);
             if (!password_verify($passwordLog, $login->password)) {
-                $formError['passwordLog'] = 'Identifiant incorrect';
+                $formError['passwordLog'] = 'Mauvais Mdp';
             } else {
                 $_SESSION['id'] = $login->id;
                 $_SESSION['pseudo'] = $login->pseudo;
@@ -46,10 +46,10 @@ if (isset($_POST['logInSubmit'])) {
                 <?php
             }
         } else {
-            $formError['pseudoLog'] = 'Identifiant incorrect';
+            $formError['pseudoLog'] = 'MDP erreur';
         }
     } else {
-        $formError['pseudoLog'] = 'Identifiant incorrect';
+        $formError['pseudoLog'] = 'Cheh';
     }
 }
 ?>
