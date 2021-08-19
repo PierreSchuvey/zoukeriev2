@@ -22,7 +22,7 @@ include_once 'controllers/loginUsers.php';
                     <div class="form-group offset-1 col-10 offset-sm-3 col-sm-6">
                         <button type="submit" class="form-control" name="logInSubmit"> Connexion</button>
                         <p class="errorsLoginSub"><?= isset($formError['passwordLog']) ? $formError['passwordLog'] : '' ?><?= isset($formError['pseudoLog']) ? $formError['pseudoLog'] : '' ?></p>
-                        <small>Vous n'êtes pas encore inscrit ? Alors cliquer : <a href = "subscribeForm.php" alt = "Inscription" id = "subscribe">Ici</a></small>
+                        <small style="color:white">Vous n'êtes pas encore inscrit ? Alors cliquer : <a style="color:red" href = "subscribeForm.php" alt = "Inscription" id = "subscribe">Ici</a></small>
                     </div>
                 </form>
             </div>
