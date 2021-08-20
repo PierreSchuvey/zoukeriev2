@@ -14,7 +14,7 @@ include_once 'controllers/gamesListController.php';
               foreach ($gamesList as $g){
           ?>
             <div class="col-12 offset-sm-2 col-sm-3">
-                <a href="characters.php?gameId=<?= $g->id ?>"><?= $g->name ?></a>
+                <a class="gamesLink" href="characters.php?gameId=<?= $g->id ?>"><?= $g->name ?></a>
             </div>
           <?php
               }

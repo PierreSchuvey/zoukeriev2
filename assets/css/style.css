@@ -114,3 +114,10 @@ button:hover{
 .title{
   margin-top : 50px;
 }
+.gamesLink{
+  text-decoration: none;
+  font-size: 30px;
+  border: #fff solid 5px;
+  padding: 15px;
+  color: #fff;
+}
