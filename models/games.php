@@ -1,6 +1,6 @@
 <?php
 
-class versions extends dataBase {
+class games extends dataBase {
 
     public $id = 0;
     public $name = '';
