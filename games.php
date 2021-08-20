@@ -9,11 +9,11 @@ include_once 'controllers/gamesListController.php';
     </div>
     <div class="container">
       <?php
-      var_dump($gamesList);
+
           foreach ($gamesList as $g){
       ?>
               <tr>
-                  <td><?= $g->Name; ?></td>
+                  <td><?= $g->name; ?></td>
               </tr>
       <?php
           }
