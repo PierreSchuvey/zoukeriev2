@@ -3,4 +3,3 @@
     $charactersList->idUser = $_SESSION['id'];
     $charactersList->idGame = $_GET['gameId'];
     $charactersList = $charactersList->getCharacters();
-?>
