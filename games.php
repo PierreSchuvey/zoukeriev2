@@ -6,7 +6,7 @@ include_once 'models/dataBase.php';
 include_once 'models/users.php';
 include_once 'models/games.php';
 //Intégration du controlleur addUserController
-include_once 'controllers/addUserController.php';
+include_once 'controllers/gamesListController.php.php';
 ?>
   <body>
     <div class="title">
@@ -14,7 +14,7 @@ include_once 'controllers/addUserController.php';
     </div>
     <div class="container">
       <?php
-         $allVersion
+        $gamesList
       ?>
     </div>
   </body>
