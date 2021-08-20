@@ -15,7 +15,7 @@ include_once 'controllers/charactersListController.php';
     </div>
     <div class="row">
         <?php
-
+        var_dump($charactersList);
         foreach ($charactersList as $c){
             ?>
             <div class="col-12 offset-sm-2 col-sm-3">
