@@ -10,7 +10,8 @@ include_once 'controllers/charactersListController.php';
 <div class="container">
     <div class="row">
         <div class="col-12">
-            <center><h2 style="color:white">Sélectionne ton personnage</h2></center>
+            <h2 style="color:white;text-align: center">Sélectionne ton personnage ou </h2>
+            <a href="createCharacter.php?gameId=<?=$_GET['gameId']?>"></a>
         </div>
     </div>
     <div class="row">
