@@ -8,17 +8,16 @@ include_once 'controllers/gamesListController.php';
         <h1><?= $_SESSION['pseudo'] ?></h1>
     </div>
     <div class="container">
-      <?php
+        <div class="row">
+          <?php
 
-          foreach ($gamesList as $g){
-      ?>
-              <tr>
-                  <td><?= $g->name; ?></td>
-              </tr>
-      <?php
-          }
-      ?>
-
+              foreach ($gamesList as $g){
+          ?>
+            <div class="col-12 col-sm-6"><?= $g->Name ?></div>
+          <?php
+              }
+          ?>
+        </div>
     </div>
   </body>
   <footer>
