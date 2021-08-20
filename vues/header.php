@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
-    <script type="text/javascript" src="/assets/js/jquery-3.2.1.js"></script>
-    <script type="text/javascript" src="/assets/js/jquery.jrumble.1.3.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.js"></script>
     <script type="text/javascript" src="../assets/bootstrap/js/bootstrap.js" /></script>
 </head>
 <body>
