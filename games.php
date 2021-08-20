@@ -1,11 +1,7 @@
 <?php
 include_once 'vues/header.php';
-// Inégration du modéle dataBase pour éfféctué la connexion à la bas de données
 include_once 'models/dataBase.php';
-// intégration du modéle user
-include_once 'models/users.php';
 include_once 'models/games.php';
-//Intégration du controlleur addUserController
 include_once 'controllers/gamesListController.php.php';
 ?>
   <body>
@@ -14,8 +10,15 @@ include_once 'controllers/gamesListController.php.php';
     </div>
     <div class="container">
       <?php
-        $gamesList
+          foreach ($gamesList as $g){
       ?>
+              <tr>
+                  <td><?= $g->Name; ?></td>
+              </tr>
+      <?php
+          }
+      ?>
+
     </div>
   </body>
   <footer>
