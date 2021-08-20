@@ -1,8 +1,8 @@
 <?php
 include_once 'vues/header.php';
 include_once 'models/dataBase.php';
-include_once 'models/games.php';
-include_once 'controllers/gamesListController.php';
+include_once 'models/characters.php';
+include_once 'controllers/charactersListController.php';
 ?>
 <div class="title">
     <h1><?= $_SESSION['pseudo'] ?></h1>
@@ -10,7 +10,7 @@ include_once 'controllers/gamesListController.php';
 <div class="container">
     <div class="row">
         <div class="col-12">
-            <center><h2 style="color:white">Sélectionne le jeu</h2></center>
+            <center><h2 style="color:white">Sélectionne ton personnage</h2></center>
         </div>
     </div>
     <div class="row">
