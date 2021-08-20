@@ -8,7 +8,11 @@ include_once 'controllers/gamesListController.php';
         <h1><?= $_SESSION['pseudo'] ?></h1>
     </div>
     <div class="container">
-        <center><h2>Sélectionne le jeu</h2></center>
+        <div class="row">
+            <div class="col-12">
+                <center><h2 style="color:white">Sélectionne le jeu</h2></center>
+            </div>
+        </div>
         <div class="row">
           <?php
 
