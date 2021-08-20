@@ -1,7 +1,7 @@
 
 <?php
 
-class games extends dataBase {
+class characters extends dataBase {
 
     public $id = 0;
     public $name = '';
