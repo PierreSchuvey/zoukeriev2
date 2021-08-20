@@ -1,5 +1,5 @@
-<?php session_start(); ?>
 <!DOCTYPE html>
+<?php session_start(); ?>
 <html ng-app="app" ng-controller="testCtrl">
 <head>
     <title>La Zoukerie</title>
