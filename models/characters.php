@@ -1,4 +1,3 @@
-
 <?php
 
 class characters extends dataBase {
@@ -16,7 +15,7 @@ class characters extends dataBase {
 
 
     public function getCharacters() {
-        $query = 'SELECT `id`,`name` FROM `characters` WHERE `id_user` = :idUser AND `id_game` = :idGames';
+        $query = 'SELECT `id`,`name` FROM `characters` WHERE `id_user` = :idUser AND `id_game` = :idGame';
         $getCharacters = $this->db->prepare($query);
         $getCharacters->bindValue(':idUser', $this->idUser, PDO::PARAM_INT);
         $getCharacters->bindValue(':idGame', $this->idGame, PDO::PARAM_INT);
