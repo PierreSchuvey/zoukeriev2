@@ -1,15 +1,11 @@
 <?php
 include_once 'vues/header.php';
-// Inégration du modéle dataBase pour éfféctué la connexion à la bas de données
 include_once 'models/dataBase.php';
-// intégration du modéle user
 include_once 'models/users.php';
-//Intégration du controlleur addUserController
 include_once 'controllers/addUserController.php';
 ?>
     <div class="container bodyPage" id="subscribeContainer">
         <div class="col-lg-12 text-center">
-            <!--Affichage des messages d'erreurs si il y en as-->
             <p class="errorsLoginSub"><?= isset($formError['add']) ? $formError['add'] : '' ?></p>
             <p class="errorsLoginSub"><?= isset($formError['redirect']) ? $formError['redirect'] : '' ?></p>
             <div class="title">
@@ -44,4 +40,3 @@ include_once 'controllers/addUserController.php';
             </div>
         </form>
     </div>
-    <!-- Intégration de la vue du footer -->
