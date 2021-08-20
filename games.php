@@ -2,8 +2,8 @@
 include_once 'vues/header.php';
 include_once 'models/dataBase.php';
 include_once 'models/games.php';
+include_once 'controllers/gamesListController.php';
 ?>
-  <body>
     <div class="title">
         <h1><?= $_SESSION['pseudo'] ?></h1>
     </div>

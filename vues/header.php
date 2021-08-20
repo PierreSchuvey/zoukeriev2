@@ -13,6 +13,3 @@
     <script type="text/javascript" src="../assets/bootstrap/js/bootstrap.js" /></script>
 </head>
 <body>
-<link rel="icon" type="image/png" href="../assets/img/icobar.png" />
-<header>
-</header>
